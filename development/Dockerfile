@@ -1,4 +1,5 @@
 FROM --platform=linux/x86_64 archlinux:latest
+RUN pacman-key --init
 RUN pacman -Syu --noconfirm \
     glibc \
     git \
@@ -27,6 +28,7 @@ RUN pacman -Syu --noconfirm \
 RUN useradd -ms /bin/zsh d3psi
 RUN groupadd sudo
 RUN usermod -aG sudo d3psi
+RUN usermod -aG docker d3psi
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 USER d3psi
 WORKDIR /home/d3psi
