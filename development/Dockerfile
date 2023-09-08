@@ -9,6 +9,8 @@ RUN pacman -Syu --noconfirm \
     cmake \
     gcc \
     jdk17-openjdk \
+    jdk11-openjdk \
+    jdk8-openjdk \
     maven \
     gradle \
     zsh \
@@ -24,7 +26,10 @@ RUN pacman -Syu --noconfirm \
     xorg \
     docker \
     docker-compose \
-    docker-buildx
+    docker-buildx \
+    kcachegrind \
+    valgrind \
+    gdb
 RUN useradd -ms /bin/zsh d3psi
 RUN groupadd sudo
 RUN usermod -aG sudo d3psi
