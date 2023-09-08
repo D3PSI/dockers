@@ -44,8 +44,6 @@ WORKDIR /home/d3psi/Documents/dotfiles
 RUN ./install.sh
 WORKDIR /home/d3psi/Documents
 RUN rm -r dotfiles
-
-ARG GITHUB_TOKEN
-ENV GITHUB_TOKEN=${GITHUB_TOKEN}
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 WORKDIR /home/d3psi
