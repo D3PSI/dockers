@@ -47,3 +47,5 @@ RUN rm -r dotfiles
 
 ARG GITHUB_TOKEN
 ENV GITHUB_TOKEN=${GITHUB_TOKEN}
+
+WORKDIR /home/d3psi
