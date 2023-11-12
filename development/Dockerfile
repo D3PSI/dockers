@@ -55,6 +55,7 @@ RUN yay -Syu --noconfirm \
     unzip \
     npm \
     openssl \
-    pkgconfig
+    pkgconfig \
+    ripgrep
 
 WORKDIR /home/d3psi
