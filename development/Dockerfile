@@ -50,5 +50,11 @@ RUN ./install.sh
 WORKDIR /home/d3psi/Documents
 RUN rm -r dotfiles
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+RUN curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | BOOTSTRAP_HASKELL_NONINTERACTIVE=true sh
+RUN yay -Syu --noconfirm \
+    unzip \
+    npm \
+    openssl \
+    pkgconfig
 
 WORKDIR /home/d3psi
