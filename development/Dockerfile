@@ -56,6 +56,8 @@ RUN yay -Syu --noconfirm \
     npm \
     openssl \
     pkgconfig \
-    ripgrep
+    ripgrep \
+    github-cli \
+    btop
 
 WORKDIR /home/d3psi
