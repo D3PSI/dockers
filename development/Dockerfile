@@ -59,5 +59,6 @@ RUN yay -Syu --noconfirm \
     ripgrep \
     github-cli \
     btop
+RUN /home/d3psi/.cargo/bin/cargo install sqlx-cli
 
 WORKDIR /home/d3psi
