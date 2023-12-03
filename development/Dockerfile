@@ -58,7 +58,9 @@ RUN yay -Syu --noconfirm \
     pkgconfig \
     ripgrep \
     github-cli \
-    btop
+    btop \
+    yarn \
+    chromedriver
 RUN /home/d3psi/.cargo/bin/cargo install sqlx-cli
 
 WORKDIR /home/d3psi
