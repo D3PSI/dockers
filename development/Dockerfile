@@ -60,7 +60,8 @@ RUN yay -Syu --noconfirm \
     github-cli \
     btop \
     yarn \
-    chromedriver
+    chromedriver \
+    protobuf
 RUN /home/d3psi/.cargo/bin/cargo install sqlx-cli
 
 WORKDIR /home/d3psi
